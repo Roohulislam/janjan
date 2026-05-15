@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Your custom CSS */
+body {
+  padding-top: 4rem;
+}
+.mobile-menu {
+  transition: all 0.3s ease;
+}
