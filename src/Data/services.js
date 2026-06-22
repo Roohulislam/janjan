@@ -232,7 +232,7 @@ export const services = [
   {
     id: 6,
     title: "Interior Fit Out & Finishing Works",
-    image: "/assets/services/interior-oufit.png",
+    image: "/assets/services/interior oufit.png",
     description: "High-quality interior finishing and fit-out services.",
     details: [
       "Partition & Ceiling",
@@ -280,7 +280,7 @@ export const services = [
   {
     id: 10,
     title: "Electro-Mechanical (MEP)",
-    image: "/assets/services/electro-mechinical.png",
+    image: "/assets/services/electro mechinical.png",
     description: "Complete mechanical, electrical and plumbing solutions.",
     details: [
       "Electrical Installations",
