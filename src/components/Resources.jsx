@@ -17,7 +17,7 @@ import img12 from "../assets/Certificates/24.png";
 import img13 from "../assets/Certificates/15.png";
 import img14 from "../assets/Certificates/19.png";
 // Import your logo (transparent background)
-import logo from "../assets/Certificates/loogoo1-removebg111.png";
+import logo from "../assets/logos/favicon_io/l2.png";
 
 const images = [
   img1, img2, img3, img4, img5, img6, img7,

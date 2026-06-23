@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSearch } from "../../context/SearchContext";
-import s1Logo from "../../assets/logos/favicon_io/loogoo1-removebg111.png";
+import s1Logo from "../../assets/logos/favicon_io/l2.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,37 +44,37 @@ const Navbar = () => {
       }`}
       style={{ backgroundColor: "#cac0c8" }}
     >
-      {/* Top Bar - Visible on large screens */}
-      <div className="hidden lg:flex items-center justify-between px-4 py-0">
-        <div className="flex items-center space-x-2">
-          <img 
-            src={s1Logo} 
-            alt="Company Logo" 
-            className="h-16 object-contain"
-          />
-          <div className="text-black">
-            <h1 className="text-xl font-bold">SaudiBuildPro Contractor</h1>
-            <p className="text-sm">مقاول سعودي بيلد برو</p>
-          </div>
-        </div>
-        
-        <div className="flex items-center space-x-2">
-          <button 
-            className="px-3 py-1.5 text-sm bg-sky-600 text-white rounded hover:bg-skys-700 transition" 
-            style={{ backgroundColor: "#1e4a7a" }}
-            onClick={() => navigate("/employee-login")}
-          >
-            EMPLOYEE LOGIN
-          </button>
-          <button 
-            className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition"
-            onClick={() => navigate("/company-profile")}
-          >
-            COMPANY PROFILE
-          </button>
-        </div>
-      </div>
-
+     <div className="hidden lg:flex items-center justify-between px-4 py-0">
+  <div className="flex items-center space-x-2">
+    <div className="h-16  flex items-center"> {/* Fixed container */}
+      <img 
+        src={s1Logo} 
+        alt="Company Logo" 
+        className="h-40 pt-9 w-auto object-contain" // Increased image size
+      />
+    </div>
+    <div className="text-black">
+      <h1 className="text-xl font-bold">SaudiBuildPro Contractor</h1>
+      <p className="text-sm">مقاول سعودي بيلد برو</p>
+    </div>
+  </div>
+  
+  <div className="flex items-center space-x-2">
+    <button 
+      className="px-3 py-1.5 text-sm bg-sky-600 text-white rounded hover:bg-skys-700 transition" 
+      style={{ backgroundColor: "#1e4a7a" }}
+      onClick={() => navigate("/employee-login")}
+    >
+      EMPLOYEE LOGIN
+    </button>
+    <button 
+      className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition"
+      onClick={() => navigate("/company-profile")}
+    >
+      COMPANY PROFILE
+    </button>
+  </div>
+</div>
       {/* Main Navigation */}
       <nav>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,7 +84,7 @@ const Navbar = () => {
   <img 
     src={s1Logo} 
     alt="Company Logo" 
-    className="h-8 sm:h-10 object-contain" // Responsive logo size
+    className="h-12 sm:h-10 object-contain" // Responsive logo size
   />
   <div className="text-black ml-2">
     <h1 className="text-xs sm:text-sm font-medium">SaudiBuildPro Contractor</h1>
