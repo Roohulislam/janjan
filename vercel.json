@@ -34,7 +34,7 @@
       ]
     },
     {
-      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico)$",
+      "source": "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico|mp4|webm|mov)$",
       "headers": [
         {
           "key": "Cache-Control",
@@ -42,7 +42,7 @@
         },
         {
           "key": "Content-Type",
-          "value": "image/$1"
+          "value": "video/$1"
         }
       ]
     }

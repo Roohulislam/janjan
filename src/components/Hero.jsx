@@ -157,11 +157,23 @@ const Hero = () => {
           }}
           className="absolute inset-0 w-full h-full"
         >
-          <img
-            src={heroSlides[currentSlide].image}
-            alt={heroSlides[currentSlide].alt}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          {/* Conditional rendering for video or image */}
+          {heroSlides[currentSlide].type === "video" ? (
+            <video
+              src={heroSlides[currentSlide].video}
+              className="absolute inset-0 w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          ) : (
+            <img
+              src={heroSlides[currentSlide].image}
+              alt={heroSlides[currentSlide].alt}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
         </motion.div>
       </AnimatePresence>
 
