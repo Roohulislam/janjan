@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import chooseUsBanner from "../assets/services/whychoose.png";
-import qualityBadge from "../assets/services/qs.png";
-import deliveryIcon from "../assets/services/timly.png";
-import experienceIcon from "../assets/services/experience.png";
-import globalIcon from "../assets/services/global.png";
+import {
+  FaCheckCircle,
+  FaClock,
+  FaUsers,
+  FaGlobe,
+} from "react-icons/fa";
 
 const ChooseUs = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -16,22 +18,26 @@ const ChooseUs = () => {
     {
       title: "Quality Assurance",
       description: "Certified standards for every project",
-      icon: qualityBadge,
+      icon: FaCheckCircle,
+      color: "#329ab1",
     },
     {
       title: "Timely Delivery",
       description: "On-schedule completion every time",
-      icon: deliveryIcon,
+      icon: FaClock,
+      color: "#e67e22",
     },
     {
       title: "Experienced Team",
       description: "Trusted professionals with decades of expertise",
-      icon: experienceIcon,
+      icon: FaUsers,
+      color: "#2c3e50",
     },
     {
       title: "Global Projects",
       description: "Serving clients worldwide",
-      icon: globalIcon,
+      icon: FaGlobe,
+      color: "#2980b9",
     },
   ];
 
@@ -151,31 +157,30 @@ const ChooseUs = () => {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              {features.map((feature) => (
-                <motion.div
-                  key={feature.title}
-                  whileHover={{ y: -5 }}
-                  className="bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-                >
+              {features.map((feature) => {
+                const Icon = feature.icon;
+                return (
                   <motion.div
-                    whileHover={{ rotate: 10, scale: 1.1 }}
-                    style={{ backgroundColor: "#329ab1" }}
-                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4"
+                    key={feature.title}
+                    whileHover={{ y: -5 }}
+                    className="bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col items-center text-center"
                   >
-                    <img
-                      src={feature.icon}
-                      alt={feature.title}
-                      className="h-6 w-6 sm:h-8 sm:w-8 object-contain"
-                    />
+                    <motion.div
+                      whileHover={{ rotate: 10, scale: 1.1 }}
+                      style={{ backgroundColor: feature.color }}
+                      className="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-3 sm:mb-4"
+                    >
+                      <Icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
+                    </motion.div>
+                    <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-1 sm:mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 text-xs sm:text-sm">
+                      {feature.description}
+                    </p>
                   </motion.div>
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold mb-1 sm:mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600 text-xs sm:text-sm">
-                    {feature.description}
-                  </p>
-                </motion.div>
-              ))}
+                );
+              })}
             </motion.div>
           </div>
         </div>

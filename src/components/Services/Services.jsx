@@ -49,10 +49,10 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            OUR <span className="text-blue-600">SERVICES</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            OUR SERVICES
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-600 max-w-2xl mx-auto">
             Comprehensive construction solutions tailored to your project needs
           </p>
         </motion.div>
