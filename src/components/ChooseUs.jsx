@@ -100,7 +100,7 @@ const ChooseUs = () => {
               className="flex-1"
             >
               <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-                At <span className="font-semibold">SaudiBuildPro</span>, we deliver flexible, reliable, and cost-effective solutions for
+                At <span className="font-semibold">SaudiBuild Construction</span>, we deliver flexible, reliable, and cost-effective solutions for
                 diverse operations and maintenance needs across industries.
               </p>
 

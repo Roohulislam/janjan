@@ -111,7 +111,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
             className="text-xl md:text-2xl  font-bold mb-1"
           >
-            About SaudiBuildPro Contractor
+            About SaudiBuild Construction
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

@@ -143,7 +143,7 @@ const Careers = () => {
             transition={{ duration: 0.6 }}
             className="text-xl md:text-2xl font-bold mb-1"
           >
-            Career Opportunities at SaudibuildPro
+            Career Opportunities at Saudibuild Construction
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

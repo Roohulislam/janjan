@@ -8,9 +8,9 @@ export const aboutTabs = [
 
 export const aboutContent = {
   about: {
-    title: "About SaudiBuildPro",
+    title: "About SaudiBuild Construction",
     content: [
-      "SaudiBuildPro is a premier provider of thermal insulation solutions, specializing in high-quality spray foam insulation. We are dedicated to delivering superior insulation services that enhance energy efficiency, comfort, and sustainability for residential, commercial, and industrial clients.",
+      "SaudiBuildConstruction is a premier provider of thermal insulation solutions, specializing in high-quality spray foam insulation. We are dedicated to delivering superior insulation services that enhance energy efficiency, comfort, and sustainability for residential, commercial, and industrial clients.",
       "Our team of certified professionals brings extensive experience in thermal insulation, ensuring optimal performance and long-term savings for our clients. We combine cutting-edge technology with industry best practices to deliver exceptional results on every project.",
       "Headquartered in Saudi Arabia, we serve clients across the region with a commitment to quality, safety, and environmental responsibility. Our solutions are tailored to meet the unique challenges of the Middle East's climate and construction requirements."
     ],

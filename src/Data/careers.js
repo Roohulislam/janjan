@@ -10,7 +10,7 @@ export const careersContent = {
     content: [
       {
         type: 'paragraph',
-        text: "SaudibuildPro Constructor offers rewarding career opportunities in construction across Saudi Arabia for professionals specializing in civil engineering, MEP installations, and large-scale building projects."
+        text: "Saudibuild Construction offers rewarding career opportunities in construction across Saudi Arabia for professionals specializing in civil engineering, MEP installations, and large-scale building projects."
       },
       {
         type: 'paragraph',

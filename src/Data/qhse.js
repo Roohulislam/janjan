@@ -11,7 +11,7 @@ export const qhseContent = {
   about: {
     title: "Our QHSE Commitment in Saudi Arabia",
     content: [
-      "SaudibuildPro Constructor is committed to excellence in Quality, Health, Safety, and Environmental management across all our construction projects in the Kingdom of Saudi Arabia.",
+      "Saudibuild Construction is committed to excellence in Quality, Health, Safety, and Environmental management across all our construction projects in the Kingdom of Saudi Arabia.",
       "We align our operations with Saudi Vision 2030 and comply with Saudi Building Code (SBC) and international standards to deliver world-class construction services.",
       {
         commitment: [
@@ -76,7 +76,7 @@ export const qhseContent = {
   certification: {
     title: "Our Saudi Certifications",
     content: [
-      "SaudibuildPro Constructor maintains all required Saudi certifications:",
+      "Saudibuild Construction maintains all required Saudi certifications:",
       {
         items: [
         ]

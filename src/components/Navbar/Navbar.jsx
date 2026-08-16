@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import s1Logo from "../../assets/logos/favicon_io/l2.png";
+import s1Logo from "../../assets/logos/favicon_io/l5.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,23 +13,32 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    if (isLanguageOpen) setIsLanguageOpen(false);
+
+    if (isLanguageOpen) {
+      setIsLanguageOpen(false);
+    }
   };
 
   const toggleLanguage = () => {
     setIsLanguageOpen(!isLanguageOpen);
-    if (isMenuOpen) setIsMenuOpen(false);
+
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
   };
 
   const changeLanguage = (lang) => {
     setCurrentLanguage(lang);
     setIsLanguageOpen(false);
+
     // Here you can add logic to change the app's language
     // For example: i18n.changeLanguage(lang.toLowerCase())
   };
@@ -41,31 +50,67 @@ const Navbar = () => {
       }`}
       style={{ backgroundColor: "#cac0c8" }}
     >
-      <div className="hidden lg:flex items-center justify-between px-4 py-0">
-        <div className="flex items-center space-x-2">
-          <div className="h-16 flex items-center">
-            <img 
-              src={s1Logo} 
-              alt="Company Logo" 
-              className="h-40 pt-9 w-auto object-contain"
+      {/* =====================================================
+          TOP COMPANY HEADER
+          ===================================================== */}
+      <div className="hidden lg:flex items-center justify-between px-3 xl:px-5 2xl:px-8 py-0">
+        {/* Logo + Company Name */}
+        <div className="flex items-center space-x-2 min-w-0">
+          <div className="h-16 flex items-center flex-shrink-0">
+            <img
+              src={s1Logo}
+              alt="Company Logo"
+              className="h-40 pt-12 w-auto object-contain"
             />
           </div>
-          <div className="text-black">
-            <h1 className="text-xl font-bold">SaudiBuildPro Contractor</h1>
-            <p className="text-sm">مقاول سعودي بيلد برو</p>
+
+          <div className="text-black min-w-0">
+            <h1 className="text-lg xl:text-xl 2xl:text-xl font-bold whitespace-nowrap">
+              Saudi Build Construction
+            </h1>
+
+            <p className="text-xs xl:text-sm whitespace-nowrap">
+              سعودي بيلد للإنشاءات
+            </p>
           </div>
         </div>
-        
-        <div className="flex items-center space-x-2">
-          <button 
-            className="px-3 py-1.5 text-sm bg-sky-600 text-white rounded hover:bg-skys-700 transition" 
+
+        {/* Top Right Buttons */}
+        <div className="flex items-center space-x-2 flex-shrink-0">
+          <button
+            className="
+              px-2.5
+              xl:px-3
+              py-1.5
+              text-xs
+              xl:text-sm
+              bg-sky-600
+              text-white
+              rounded
+              hover:bg-sky-700
+              transition
+              whitespace-nowrap
+            "
             style={{ backgroundColor: "#1e4a7a" }}
             onClick={() => navigate("/employee-login")}
           >
             EMPLOYEE LOGIN
           </button>
-          <button 
-            className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition"
+
+          <button
+            className="
+              px-2.5
+              xl:px-3
+              py-1.5
+              text-xs
+              xl:text-sm
+              bg-gray-200
+              text-gray-800
+              rounded
+              hover:bg-gray-300
+              transition
+              whitespace-nowrap
+            "
             onClick={() => navigate("/company-profile")}
           >
             COMPANY PROFILE
@@ -73,82 +118,236 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navigation */}
+      {/* =====================================================
+          MAIN NAVIGATION
+          ===================================================== */}
       <nav>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            {/* Mobile logo and heading */}
+        <div
+          className="
+            w-full
+            max-w-[1600px]
+            mx-auto
+            px-3
+            sm:px-4
+            lg:px-5
+            xl:px-6
+            2xl:px-8
+          "
+        >
+          <div className="flex justify-between h-16 min-w-0">
+            {/* =================================================
+                MOBILE LOGO AND HEADING
+                Kept unchanged
+                ================================================= */}
             <div className="flex items-center lg:hidden">
-              <img 
-                src={s1Logo} 
-                alt="Company Logo" 
+              <img
+                src={s1Logo}
+                alt="Company Logo"
                 className="h-12 sm:h-10 object-contain"
               />
+
               <div className="text-black ml-2">
-                <h1 className="text-xs sm:text-sm font-medium">SaudiBuildPro Contractor</h1>
-                <p className="text-[10px] sm:text-xs">مقاول سعودي بيلد برو</p>
+                <h1 className="text-xs sm:text-sm font-medium">
+                  Saudi Build Construction
+                </h1>
+
+                <p className="text-[10px] sm:text-xs">
+                  سعودي بيلد للإنشاءات
+                </p>
               </div>
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-6">
-              <NavLink to="/" text="HOME" />
-              <NavLink to="/aboutus" text="ABOUT US" />
-              <NavLink to="/services" text="SERVICES" />
-              <NavLink to="/resources" text="EQUIPMENTS GALLERY" />
-              
-              {/* Projects Dropdown */}
-              <div className="relative group">
-                <button className="text-black hover:text-blue-700 px-3 py-2 text-sm font-medium flex items-center transition-colors">
-                  PROJECTS
-                  <ChevronDownIcon />
-                </button>
-                <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                  <DropdownLink to="/projects?type=current" text="CURRENT PROJECTS" />
-                  <DropdownLink to="/projects?type=executed" text="EXECUTED PROJECTS" />
+            {/* =================================================
+                DESKTOP NAVIGATION
+                RESPONSIVE
+                ================================================= */}
+            <div className="hidden lg:flex lg:items-center flex-1 min-w-0">
+              <div
+                className="
+                  flex
+                  items-center
+                  justify-center
+                  w-full
+                  min-w-0
+                  gap-0.5
+                  xl:gap-1
+                  2xl:gap-2
+                  whitespace-nowrap
+                "
+              >
+                <NavLink to="/" text="HOME" />
+
+                <NavLink
+                  to="/aboutus"
+                  text="ABOUT US"
+                />
+
+                <NavLink
+                  to="/services"
+                  text="SERVICES"
+                />
+
+                <NavLink
+                  to="/resources"
+                  text="EQUIPMENTS GALLERY"
+                />
+
+                {/* =============================================
+                    PROJECTS DROPDOWN
+                    ============================================= */}
+                <div className="relative group flex-shrink-0">
+                  <button
+                    className="
+                      text-black
+                      hover:text-blue-700
+                      px-1.5
+                      xl:px-2
+                      2xl:px-3
+                      py-2
+                      text-[11px]
+                      xl:text-xs
+                      2xl:text-sm
+                      font-medium
+                      flex
+                      items-center
+                      transition-colors
+                      whitespace-nowrap
+                    "
+                  >
+                    PROJECTS
+
+                    <ChevronDownIcon />
+                  </button>
+
+                  <div
+                    className="
+                      absolute
+                      left-0
+                      mt-2
+                      w-48
+                      bg-white
+                      rounded-md
+                      shadow-lg
+                      py-1
+                      z-50
+                      opacity-0
+                      invisible
+                      group-hover:opacity-100
+                      group-hover:visible
+                      transition-all
+                      duration-300
+                    "
+                  >
+                    <DropdownLink
+                      to="/projects?type=current"
+                      text="CURRENT PROJECTS"
+                    />
+
+                    <DropdownLink
+                      to="/projects?type=executed"
+                      text="EXECUTED PROJECTS"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <NavLink to="/qhse" text="QHSE" />
-              <NavLink to="/careers" text="CAREERS" />
-              <NavLink to="/contact" text="CONTACT" />
+                <NavLink
+                  to="/qhse"
+                  text="QHSE"
+                />
+
+                <NavLink
+                  to="/careers"
+                  text="CAREERS"
+                />
+
+                <NavLink
+                  to="/contact"
+                  text="CONTACT"
+                />
+              </div>
             </div>
 
-            {/* Language Switcher for Desktop */}
-            <div className="hidden lg:flex lg:items-center">
+            {/* =================================================
+                LANGUAGE SWITCHER FOR DESKTOP
+                RESPONSIVE
+                ================================================= */}
+            <div className="hidden lg:flex lg:items-center flex-shrink-0 ml-1 xl:ml-2">
               <div className="relative">
                 <button
                   onClick={toggleLanguage}
-                  className="flex items-center space-x-1 px-2 py-2 text-sm font-medium text-black hover:text-blue-700 transition-colors"
+                  className="
+                    flex
+                    items-center
+                    space-x-1
+                    px-1.5
+                    xl:px-2
+                    py-2
+                    text-[11px]
+                    xl:text-xs
+                    2xl:text-sm
+                    font-medium
+                    text-black
+                    hover:text-blue-700
+                    transition-colors
+                    whitespace-nowrap
+                  "
                 >
                   <GlobeIcon />
-                  <span className="text-xs">{currentLanguage}</span>
+
+                  <span>{currentLanguage}</span>
                 </button>
-                
+
                 {isLanguageOpen && (
-                  <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-1 z-50 border border-gray-200">
+                  <div
+                    className="
+                      absolute
+                      right-0
+                      mt-2
+                      w-40
+                      bg-white
+                      rounded-lg
+                      shadow-lg
+                      py-1
+                      z-50
+                      border
+                      border-gray-200
+                    "
+                  >
                     <button
                       onClick={() => changeLanguage("EN")}
                       className={`flex items-center w-full text-left px-4 py-2.5 text-sm hover:bg-gray-50 transition-colors ${
-                        currentLanguage === "EN" ? "bg-blue-50 text-blue-700" : "text-gray-700"
+                        currentLanguage === "EN"
+                          ? "bg-blue-50 text-blue-700"
+                          : "text-gray-700"
                       }`}
                     >
-                      <span className="mr-3">🇬🇧</span>
+                      <span className="mr-3">
+                        🇬🇧
+                      </span>
+
                       <span>English</span>
+
                       {currentLanguage === "EN" && (
                         <span className="ml-auto">
                           <CheckIcon />
                         </span>
                       )}
                     </button>
+
                     <button
                       onClick={() => changeLanguage("AR")}
                       className={`flex items-center w-full text-left px-4 py-2.5 text-sm hover:bg-gray-50 transition-colors ${
-                        currentLanguage === "AR" ? "bg-blue-50 text-blue-700" : "text-gray-700"
+                        currentLanguage === "AR"
+                          ? "bg-blue-50 text-blue-700"
+                          : "text-gray-700"
                       }`}
                     >
-                      <span className="mr-3">🇸🇦</span>
+                      <span className="mr-3">
+                        🇸🇦
+                      </span>
+
                       <span>العربية</span>
+
                       {currentLanguage === "AR" && (
                         <span className="ml-auto">
                           <CheckIcon />
@@ -160,7 +359,10 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Mobile menu buttons */}
+            {/* =================================================
+                MOBILE MENU BUTTONS
+                Kept unchanged
+                ================================================= */}
             <div className="flex items-center lg:hidden space-x-2">
               {/* Language Button for Mobile */}
               <div className="relative">
@@ -170,31 +372,44 @@ const Navbar = () => {
                 >
                   <GlobeIcon />
                 </button>
-                
+
                 {isLanguageOpen && (
                   <div className="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg py-1 z-50 border border-gray-200">
                     <button
                       onClick={() => changeLanguage("EN")}
                       className={`flex items-center w-full text-left px-4 py-2.5 text-sm hover:bg-gray-50 transition-colors ${
-                        currentLanguage === "EN" ? "bg-blue-50 text-blue-700" : "text-gray-700"
+                        currentLanguage === "EN"
+                          ? "bg-blue-50 text-blue-700"
+                          : "text-gray-700"
                       }`}
                     >
-                      <span className="mr-3">🇬🇧</span>
+                      <span className="mr-3">
+                        🇬🇧
+                      </span>
+
                       <span>English</span>
+
                       {currentLanguage === "EN" && (
                         <span className="ml-auto">
                           <CheckIcon />
                         </span>
                       )}
                     </button>
+
                     <button
                       onClick={() => changeLanguage("AR")}
                       className={`flex items-center w-full text-left px-4 py-2.5 text-sm hover:bg-gray-50 transition-colors ${
-                        currentLanguage === "AR" ? "bg-blue-50 text-blue-700" : "text-gray-700"
+                        currentLanguage === "AR"
+                          ? "bg-blue-50 text-blue-700"
+                          : "text-gray-700"
                       }`}
                     >
-                      <span className="mr-3">🇸🇦</span>
+                      <span className="mr-3">
+                        🇸🇦
+                      </span>
+
                       <span>العربية</span>
+
                       {currentLanguage === "AR" && (
                         <span className="ml-auto">
                           <CheckIcon />
@@ -204,7 +419,8 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-              
+
+              {/* Mobile Menu Button */}
               <button
                 onClick={toggleMenu}
                 className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-gray-700 focus:outline-none"
@@ -215,45 +431,84 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* =====================================================
+            MOBILE MENU
+            Kept unchanged
+            ===================================================== */}
         {isMenuOpen && (
           <div className="lg:hidden fixed right-0 top-16 w-1/3 h-full bg-[#cac0c8] shadow-lg z-40">
             <div className="px-2 pt-2 pb-3 space-y-0">
-              <MobileNavLink to="/" text="HOME" onClick={toggleMenu} />
-              <MobileNavLink to="/aboutus" text="ABOUT US" onClick={toggleMenu} />
-              <MobileNavLink to="/services" text="SERVICES" onClick={toggleMenu} />
-              <MobileNavLink to="/resources" text="RESOURCES" onClick={toggleMenu} />
-              
+              <MobileNavLink
+                to="/"
+                text="HOME"
+                onClick={toggleMenu}
+              />
+
+              <MobileNavLink
+                to="/aboutus"
+                text="ABOUT US"
+                onClick={toggleMenu}
+              />
+
+              <MobileNavLink
+                to="/services"
+                text="SERVICES"
+                onClick={toggleMenu}
+              />
+
+              <MobileNavLink
+                to="/resources"
+                text="RESOURCES"
+                onClick={toggleMenu}
+              />
+
               <div>
                 <button
                   onClick={toggleMenu}
                   className="w-full flex justify-between items-center px-3 py-2 text-sm font-medium text-black hover:text-blue-700 rounded"
                 >
                   PROJECTS
+
                   <ChevronDownIcon />
                 </button>
+
                 <div className="pl-4">
-                  <MobileNavLink 
-                    to="/projects?type=current" 
-                    text="CURRENT PROJECTS" 
+                  <MobileNavLink
+                    to="/projects?type=current"
+                    text="CURRENT PROJECTS"
                     onClick={toggleMenu}
                     subItem
                   />
-                  <MobileNavLink 
-                    to="/projects?type=executed" 
-                    text="EXECUTED PROJECTS" 
+
+                  <MobileNavLink
+                    to="/projects?type=executed"
+                    text="EXECUTED PROJECTS"
                     onClick={toggleMenu}
                     subItem
                   />
                 </div>
               </div>
 
-              <MobileNavLink to="/qhse" text="QHSE" onClick={toggleMenu} />
-              <MobileNavLink to="/careers" text="CAREERS" onClick={toggleMenu} />
-              <MobileNavLink to="/contact" text="CONTACT" onClick={toggleMenu} />
-              
+              <MobileNavLink
+                to="/qhse"
+                text="QHSE"
+                onClick={toggleMenu}
+              />
+
+              <MobileNavLink
+                to="/careers"
+                text="CAREERS"
+                onClick={toggleMenu}
+              />
+
+              <MobileNavLink
+                to="/contact"
+                text="CONTACT"
+                onClick={toggleMenu}
+              />
+
               <div className="pt-4 pb-2 border-t border-gray-400">
-                <button 
+                <button
                   className="w-full px-3 py-1.5 text-sm bg-sky-600 text-white rounded hover:bg-sky-700 mb-2"
                   onClick={() => {
                     navigate("/employee-login");
@@ -262,7 +517,8 @@ const Navbar = () => {
                 >
                   EMPLOYEE LOGIN
                 </button>
-                <button 
+
+                <button
                   className="w-full px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
                   onClick={() => {
                     navigate("/company-profile");
@@ -280,11 +536,28 @@ const Navbar = () => {
   );
 };
 
-// Reusable Components
+/* =========================================================
+   REUSABLE COMPONENTS
+   ========================================================= */
+
 const NavLink = ({ to, text }) => (
   <a
     href={to}
-    className="text-black hover:text-blue-700 px-3 py-2 text-sm font-medium transition-colors"
+    className="
+      text-black
+      hover:text-blue-700
+      px-1.5
+      xl:px-2
+      2xl:px-3
+      py-2
+      text-[11px]
+      xl:text-xs
+      2xl:text-sm
+      font-medium
+      transition-colors
+      whitespace-nowrap
+      flex-shrink-0
+    "
   >
     {text}
   </a>
@@ -299,15 +572,26 @@ const DropdownLink = ({ to, text }) => (
   </a>
 );
 
-const MobileNavLink = ({ to, text, onClick, subItem = false }) => (
+const MobileNavLink = ({
+  to,
+  text,
+  onClick,
+  subItem = false,
+}) => (
   <a
     href={to}
-    className={`block px-3 py-2 ${subItem ? 'text-xs' : 'text-sm'} font-medium text-black hover:text-blue-700 rounded`}
+    className={`block px-3 py-2 ${
+      subItem ? "text-xs" : "text-sm"
+    } font-medium text-black hover:text-blue-700 rounded`}
     onClick={onClick}
   >
     {text}
   </a>
 );
+
+/* =========================================================
+   GLOBE ICON
+   ========================================================= */
 
 const GlobeIcon = () => (
   <svg
@@ -326,6 +610,10 @@ const GlobeIcon = () => (
   </svg>
 );
 
+/* =========================================================
+   CHECK ICON
+   ========================================================= */
+
 const CheckIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -343,6 +631,10 @@ const CheckIcon = () => (
   </svg>
 );
 
+/* =========================================================
+   CHEVRON ICON
+   ========================================================= */
+
 const ChevronDownIcon = () => (
   <svg
     className="ml-1 h-4 w-4"
@@ -358,6 +650,10 @@ const ChevronDownIcon = () => (
   </svg>
 );
 
+/* =========================================================
+   MENU ICON
+   ========================================================= */
+
 const MenuIcon = ({ isOpen }) => (
   <svg
     className="h-6 w-6"
@@ -370,7 +666,11 @@ const MenuIcon = ({ isOpen }) => (
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+      d={
+        isOpen
+          ? "M6 18L18 6M6 6l12 12"
+          : "M4 6h16M4 12h16M4 18h16"
+      }
     />
   </svg>
 );

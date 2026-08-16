@@ -95,8 +95,8 @@ const Footer = () => {
               <div className="flex items-center">
                 <FiMail className="mr-3 text-green-600" size={16} />
                 <div>
-                  <a href="mailto:contact@saudibuildpro.com" className="hover:text-green-600 transition-colors block">
-                    contact@saudibuildpro.com
+                  <a href="mailto:info@saudibuildconstruction.com" className="hover:text-green-600 transition-colors block">
+                    info@saudibuildconstruction.com
                   </a>
                   <a href="mailto:rohailjan726@gmail.com" className="hover:text-green-600 transition-colors block">
                     rohailjan726@gmail.com
@@ -144,7 +144,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="pt-6 border-t border-gray-300 text-center text-sm text-gray-700"
         >
-          <p>© 2025 SaudiBuildPro Contractor. All Rights Reserved.</p>
+          <p>© 2015 SaudiBuildConstruction . All Rights Reserved.</p>
         </motion.div>
       </div>
     </footer>
