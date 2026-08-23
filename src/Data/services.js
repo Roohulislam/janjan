@@ -163,7 +163,7 @@ export const services = [
   {
     id: 1,
     title: "General Construction",
-    image: "/assets/services/gconstruct.png",
+    image: "/assets/services/ggconstruct.png",
     description: "Comprehensive construction services for all types of buildings and infrastructure projects.",
     details: [
       "Equipment Rental & Manpower Supply",
