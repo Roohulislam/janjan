@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 // Example: Import your 14 images (put correct paths)
-import img1 from "../assets/Certificates/41.png";
-import img2 from "../assets/Certificates/42.png";
-import img3 from "../assets/Certificates/14.png";
-import img4 from "../assets/Certificates/43.png";
-import img5 from "../assets/Certificates/18.png";
-import img6 from "../assets/Certificates/22.png";
-import img7 from "../assets/Certificates/25.png";
-import img8 from "../assets/Certificates/12.png";
-import img9 from "../assets/Certificates/26.png";
-import img10 from "../assets/Certificates/29.png";
-import img11 from "../assets/Certificates/30.png";
-import img12 from "../assets/Certificates/24.png";
-import img13 from "../assets/Certificates/15.png";
-import img14 from "../assets/Certificates/19.png";
+import img1 from "../assets/Certificates/141.png";
+import img2 from "../assets/Certificates/142.png";
+import img3 from "../assets/Certificates/114.png";
+import img4 from "../assets/Certificates/143.png";
+import img5 from "../assets/Certificates/118.png";
+import img6 from "../assets/Certificates/122.png";
+import img7 from "../assets/Certificates/125.png";
+import img8 from "../assets/Certificates/112.png";
+import img9 from "../assets/Certificates/126.png";
+import img10 from "../assets/Certificates/129.png";
+import img11 from "../assets/Certificates/130.png";
+import img12 from "../assets/Certificates/124.png";
+import img13 from "../assets/Certificates/115.png";
+import img14 from "../assets/Certificates/119.png";
 // Import your logo (transparent background)
-import logo from "../assets/logos/favicon_io/l2.png";
+import logo from "../assets/logos/favicon_io/l5.png";
 
 const images = [
   img1, img2, img3, img4, img5, img6, img7,

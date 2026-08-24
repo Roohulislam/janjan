@@ -1,15 +1,15 @@
-import img1 from '../assets/projects/40.png';
-import img2 from '../assets/projects/41.png';
-import img3 from '../assets/projects/42.png';
-import img4 from '../assets/projects/43.png';
-import img5 from '../assets/projects/44.png';
-import img6 from '../assets/projects/45.png';
-import img7 from '../assets/projects/46.png';
-import img8 from '../assets/projects/47.png';
-import img9 from '../assets/projects/48.png';
-import img10 from '../assets/projects/49.png';
-import img11 from '../assets/projects/50.png';
-import img12 from '../assets/projects/51.png';
+import img1 from '../assets/projects/140.png';
+import img2 from '../assets/projects/141.png';
+import img3 from '../assets/projects/142.png';
+import img4 from '../assets/projects/143.png';
+import img5 from '../assets/projects/144.png';
+import img6 from '../assets/projects/145.png';
+import img7 from '../assets/projects/146.png';
+import img8 from '../assets/projects/147.png';
+import img9 from '../assets/projects/148.png';
+import img10 from '../assets/projects/149.png';
+import img11 from '../assets/projects/150.png';
+import img12 from '../assets/projects/151.png';
 
 export const projects = [
   {

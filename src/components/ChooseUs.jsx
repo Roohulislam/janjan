@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import chooseUsBanner from "../assets/services/whychoose.png";
+import chooseUsBanner from "../assets/services/wwhychoose.png";
 import {
   FaCheckCircle,
   FaClock,
