@@ -158,12 +158,22 @@
 
 
 // src/data/servicesData.js
-
+import ggconstruct from "../assets/services/ggconstruct.png";
+import wwaterproofing from "../assets/services/wwaterproofing.png";
+import aaaspalt from "../assets/services/aaaspalt.png";
+import cconcrete from "../assets/services/cconcrete.png";
+import fflooring from "../assets/services/fflooring.png";
+import iinterior from "../assets/services/iinterior outfit.png";
+import sport from "../assets/services/sport.png";
+import iirrigation from "../assets/services/iirrigation.png";
+import eenfineering from "../assets/services/eenfineering.png";
+import eelectromechanical from "../assets/services/eelectro mechinical.png";
+import ffacilities from "../assets/services/ffacilities.png";
 export const services = [
   {
     id: 1,
     title: "General Construction",
-    image: "../../src/assets/services/ggconstruct.png",
+    image: ggconstruct,
     description: "Comprehensive construction services for all types of buildings and infrastructure projects.",
     details: [
       "Equipment Rental & Manpower Supply",
@@ -175,10 +185,11 @@ export const services = [
       "Gypsum board Ceiling Works"
     ]
   },
+
   {
     id: 2,
     title: "Waterproofing Solutions",
-    image: "../../src/assets/services/wwaterproofing.png",
+    image: wwaterproofing,
     description: "Complete waterproofing solutions for all types of structures and surfaces.",
     details: [
       "Bituminous Membrane",
@@ -188,10 +199,11 @@ export const services = [
       "Roof Waterproofing"
     ]
   },
+
   {
     id: 3,
     title: "Asphalt Works",
-    image: "../../src/assets/services/aaaspalt.png",
+    image: aaaspalt,
     description: "Professional asphalt services for roads, pavements and surfaces.",
     details: [
       "Aggregates",
@@ -200,10 +212,11 @@ export const services = [
       "Equipment Range"
     ]
   },
+
   {
     id: 4,
     title: "Concrete Repair & Screeding",
-    image: "../../src/assets/services/cconcrete.png",
+    image: cconcrete,
     description: "Professional concrete repair and surface preparation services.",
     details: [
       "Concrete Slab Repair",
@@ -215,10 +228,11 @@ export const services = [
       "Rehabilitation of Concrete Structures"
     ]
   },
+
   {
     id: 5,
     title: "Flooring System",
-    image: "../../src/assets/services/fflooring.png",
+    image: fflooring,
     description: "Complete flooring solutions for all types of spaces.",
     details: [
       "Vinyl and Rubber Flooring",
@@ -229,10 +243,11 @@ export const services = [
       "Polyurethane Flooring System"
     ]
   },
+
   {
     id: 6,
     title: "Interior Fit Out & Finishing Works",
-    image: "../../src/assets/services/iinterior outfit.png",
+    image: iinterior,
     description: "High-quality interior finishing and fit-out services.",
     details: [
       "Partition & Ceiling",
@@ -241,10 +256,11 @@ export const services = [
       "Custom Carpentry"
     ]
   },
+
   {
     id: 7,
     title: "Sports Ground Construction",
-    image: "../../src/assets/services/sport.png",
+    image: sport,
     description: "Specialized construction of sports facilities and grounds.",
     details: [
       "Turf Installation",
@@ -253,10 +269,11 @@ export const services = [
       "Grandstand Construction"
     ]
   },
+
   {
     id: 8,
     title: "Landscape & Irrigation System",
-    image: "../../src/assets/services/iirrigation.png",
+    image: iirrigation,
     description: "Complete landscape design and irrigation system installation.",
     details: [
       "Landscape Design",
@@ -265,10 +282,11 @@ export const services = [
       "Drainage Solutions"
     ]
   },
+
   {
     id: 9,
     title: "Steel Structure and Pre-Engineering Steel (PEB) Buildings",
-    image: "../../src/assets/services/eenfineering.png",
+    image: eenfineering,
     description: "Design and construction of steel structures and pre-engineered buildings.",
     details: [
       "Structural Steel Fabrication",
@@ -277,10 +295,11 @@ export const services = [
       "Quality Control"
     ]
   },
+
   {
     id: 10,
     title: "Electro-Mechanical (MEP)",
-    image: "../../src/assets/services/eelectro mechinical.png",
+    image: eelectromechanical,
     description: "Complete mechanical, electrical and plumbing solutions.",
     details: [
       "Electrical Installations",
@@ -289,10 +308,11 @@ export const services = [
       "Fire Protection Systems"
     ]
   },
+
   {
     id: 11,
     title: "Facility Management, Operations & Maintenance",
-    image: "../../src/assets/services/ffacilities.png",
+    image: ffacilities,
     description: "Comprehensive facility management and maintenance services.",
     details: [
       "Preventive Maintenance",
