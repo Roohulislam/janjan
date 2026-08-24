@@ -163,7 +163,7 @@ export const services = [
   {
     id: 1,
     title: "General Construction",
-    image: "/assets/services/ggconstruct.png",
+    image: "../../src/assets/services/ggconstruct.png",
     description: "Comprehensive construction services for all types of buildings and infrastructure projects.",
     details: [
       "Equipment Rental & Manpower Supply",
@@ -178,7 +178,7 @@ export const services = [
   {
     id: 2,
     title: "Waterproofing Solutions",
-    image: "/assets/services/waterproofing.png",
+    image: "../../src/assets/services/wwaterproofing.png",
     description: "Complete waterproofing solutions for all types of structures and surfaces.",
     details: [
       "Bituminous Membrane",
@@ -191,7 +191,7 @@ export const services = [
   {
     id: 3,
     title: "Asphalt Works",
-    image: "/assets/services/aspalt.png",
+    image: "../../src/assets/services/aaaspalt.png",
     description: "Professional asphalt services for roads, pavements and surfaces.",
     details: [
       "Aggregates",
@@ -203,7 +203,7 @@ export const services = [
   {
     id: 4,
     title: "Concrete Repair & Screeding",
-    image: "/assets/services/concrete.png",
+    image: "../../src/assets/services/cconcrete.png",
     description: "Professional concrete repair and surface preparation services.",
     details: [
       "Concrete Slab Repair",
@@ -218,7 +218,7 @@ export const services = [
   {
     id: 5,
     title: "Flooring System",
-    image: "/assets/services/flooring.png",
+    image: "../../src/assets/services/fflooring.png",
     description: "Complete flooring solutions for all types of spaces.",
     details: [
       "Vinyl and Rubber Flooring",
@@ -232,7 +232,7 @@ export const services = [
   {
     id: 6,
     title: "Interior Fit Out & Finishing Works",
-    image: "/assets/services/interior oufit.png",
+    image: "../../src/assets/services/iinterior outfit.png",
     description: "High-quality interior finishing and fit-out services.",
     details: [
       "Partition & Ceiling",
@@ -244,7 +244,7 @@ export const services = [
   {
     id: 7,
     title: "Sports Ground Construction",
-    image: "/assets/services/sport.png",
+    image: "../../src/assets/services/sport.png",
     description: "Specialized construction of sports facilities and grounds.",
     details: [
       "Turf Installation",
@@ -256,7 +256,7 @@ export const services = [
   {
     id: 8,
     title: "Landscape & Irrigation System",
-    image: "/assets/services/irregation.png",
+    image: "../../src/assets/services/iirrigation.png",
     description: "Complete landscape design and irrigation system installation.",
     details: [
       "Landscape Design",
@@ -268,7 +268,7 @@ export const services = [
   {
     id: 9,
     title: "Steel Structure and Pre-Engineering Steel (PEB) Buildings",
-    image: "/assets/services/engineering.png",
+    image: "../../src/assets/services/eenfineering.png",
     description: "Design and construction of steel structures and pre-engineered buildings.",
     details: [
       "Structural Steel Fabrication",
@@ -280,7 +280,7 @@ export const services = [
   {
     id: 10,
     title: "Electro-Mechanical (MEP)",
-    image: "/assets/services/electro mechinical.png",
+    image: "../../src/assets/services/eelectro mechinical.png",
     description: "Complete mechanical, electrical and plumbing solutions.",
     details: [
       "Electrical Installations",
@@ -292,7 +292,7 @@ export const services = [
   {
     id: 11,
     title: "Facility Management, Operations & Maintenance",
-    image: "/assets/services/facilities.png",
+    image: "../../src/assets/services/ffacilities.png",
     description: "Comprehensive facility management and maintenance services.",
     details: [
       "Preventive Maintenance",
