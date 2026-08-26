@@ -14,6 +14,8 @@ import Contact from './components/Contact';
 import Services from './components/Services/Services';
 import SearchResults from './pages/SearchResults';
 import Whatsapp from './components/Whatsapp';
+import Blogs from './pages/Blogs';
+import BlogDetails from './pages/BlogDetails';
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/search" element={<SearchResults/> } />
+                    <Route path="/blogs" element={<Blogs />} />
+                    <Route path="/blogs/:slug" element={<BlogDetails />}/>
           </Routes>
         </div>
         <Whatsapp/>

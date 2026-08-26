@@ -256,8 +256,8 @@ const Navbar = () => {
                 />
 
                 <NavLink
-                  to="/careers"
-                  text="CAREERS"
+                  to="/blogs"
+                  text="BLOGS"
                 />
 
                 <NavLink

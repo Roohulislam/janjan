@@ -3,6 +3,8 @@ import Hero from '../components/Hero'
 import Services from '../components/Services/Services'
 import ChooseUs from '../components/ChooseUs'
 import GroupAssociate from '../components/GroupAssociate'
+import BlogDetails from './BlogDetails'
+import Blogs from './Blogs'
 
 const Home = () => {
   return (
@@ -12,6 +14,10 @@ const Home = () => {
         <Services/>
         <ChooseUs/>
         <GroupAssociate/>
+        <Blogs/>
+        <BlogDetails/>
+              
+
       </div>
     </div>
   )

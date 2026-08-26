@@ -31,7 +31,7 @@ const Services = () => {
       `Service Details:\n${selectedService?.details.map(detail => `• ${detail}`).join('\n')}\n\n` +
       `Please contact me for further details.`
     );
-    window.open(`https://wa.me/+966548337615?text=${message}`, '_blank');
+    window.open(`https://wa.me/+966558958363?text=${message}`, '_blank');
   };
 
   // Handle image error - fallback to placeholder

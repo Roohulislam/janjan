@@ -84,11 +84,8 @@ const Footer = () => {
               <div className="flex items-center">
                 <FiPhone className="mr-3 text-green-600" size={16} />
                 <div>
-                  <a href="tel:+966548337615" className="hover:text-green-600 transition-colors block">
-                    +966 54 833 7615
-                  </a>
-                  <a href="tel:+966533400701" className="hover:text-green-600 transition-colors block">
-                    +966 53 340 0701
+                  <a href="tel:+966558958363" className="hover:text-green-600 transition-colors block">
+                    +966 55 895 8363
                   </a>
                 </div>
               </div>
@@ -99,7 +96,7 @@ const Footer = () => {
                     info@saudibuildconstruction.com
                   </a>
                   <a href="mailto:rohailjan726@gmail.com" className="hover:text-green-600 transition-colors block">
-                    rohailjan726@gmail.com
+                    saudibuildconstruction@gmail.com
                   </a>
                 </div>
               </div>
@@ -144,7 +141,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="pt-6 border-t border-gray-300 text-center text-sm text-gray-700"
         >
-          <p>© 2015 SaudiBuildConstruction . All Rights Reserved.</p>
+          <p>© 2015 SaudiBuildConstruction  rohailjan. All Rights Reserved.</p>
         </motion.div>
       </div>
     </footer>

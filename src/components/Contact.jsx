@@ -135,7 +135,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">Call Us</h3>
-                  <p className="text-gray-600">+966 54 833 7615</p>
+                  <p className="text-gray-600">+966 55 895 8363</p>
                   <p className="text-gray-600">Sunday - Thursday, 8AM - 5PM</p>
                 </div>
               </div>
@@ -155,8 +155,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">Email Us</h3>
-                  <p className="text-gray-600">contact@saudibuildpro.com</p>
-                  <p className="text-gray-600">We respond within 24 hours</p>
+                  <p className="text-gray-600">saudibuildconstruction@gmail.com</p>
+                  <p className="text-gray-600">info@saudibuildconstruction.com</p>
                 </div>
               </div>
             </motion.div>

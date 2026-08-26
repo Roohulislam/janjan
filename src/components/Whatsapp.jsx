@@ -22,7 +22,7 @@ const Whatsapp = () => {
     setIsVisible(false);
     setTimeout(() => {
       window.open(
-        `https://wa.me/${+966548337615}?text=${encodeURIComponent(message)}`,
+        `https://wa.me/${+966558958363}?text=${encodeURIComponent(message)}`,
         "_blank"
       );
       setTimeout(() => setIsVisible(true), 1000);
