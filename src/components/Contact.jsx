@@ -35,9 +35,7 @@ const Contact = () => {
     }
 
     try {
-      const apiUrl = process.env.NODE_ENV === 'development' 
-        ? 'http://localhost:5000/api/send' 
-        : '/api/send';
+      const apiUrl = import.meta.env.VITE_API_URL;
 
       const response = await fetch(apiUrl, {
         method: 'POST',
