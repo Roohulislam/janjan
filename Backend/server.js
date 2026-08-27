@@ -15,7 +15,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-vercel-domain.vercel.app",
+      "https://janjan-nine.vercel.app/",
       "https://www.saudibuildconstruction.com",
       "https://saudibuildconstruction.com",
     ],
