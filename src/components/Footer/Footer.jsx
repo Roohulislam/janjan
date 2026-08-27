@@ -141,7 +141,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="pt-6 border-t border-gray-300 text-center text-sm text-gray-700"
         >
-          <p>© 2015 SaudiBuildConstruction  rohailjan. All Rights Reserved.</p>
+          <p>© 2015 SaudiBuildConstruction  rohailjan. All Rights Reserved</p>
         </motion.div>
       </div>
     </footer>
